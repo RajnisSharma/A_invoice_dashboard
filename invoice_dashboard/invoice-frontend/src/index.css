@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Sora', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --ink: #1d1b16;
+  --ink-muted: #5f5b53;
+  --accent-strong: #0e7c7b;
+  --warning: #f36d4e;
+  --panel: rgba(255, 255, 255, 0.75);
+  --stroke: #e2d7c9;
+  --shadow: 0 24px 50px rgba(19, 16, 12, 0.12);
+  --shadow-soft: 0 18px 40px rgba(19, 16, 12, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(244, 162, 97, 0.25), transparent 45%),
+    radial-gradient(circle at 80% 20%, rgba(14, 124, 123, 0.18), transparent 50%),
+    linear-gradient(120deg, #f8f2ea 0%, #f2e7da 55%, #efe0cf 100%);
+  min-height: 100vh;
+}
+
+code {
+  font-family: var(--font-mono);
+  background: rgba(14, 124, 123, 0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+::selection {
+  background: rgba(14, 124, 123, 0.2);
+}
+
+a {
+  color: inherit;
+}
